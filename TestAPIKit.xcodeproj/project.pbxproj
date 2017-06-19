@@ -17,6 +17,9 @@
 		96E023461EF7C39D0008F824 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E023451EF7C36B0008F824 /* Himotoki.framework */; };
 		96E023491EF7C3CD0008F824 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E023471EF7C39E0008F824 /* ObjectMapper.framework */; };
 		96E0234A1EF7C3DB0008F824 /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E023481EF7C39E0008F824 /* Unbox.framework */; };
+		96E0234C1EF7C6F40008F824 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234B1EF7C6F40008F824 /* Request.swift */; };
+		96E0234E1EF7CD4F0008F824 /* Response+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234D1EF7CD4F0008F824 /* Response+Default.swift */; };
+		96E023501EF7CD9E0008F824 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234F1EF7CD9E0008F824 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		96E023451EF7C36B0008F824 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		96E023471EF7C39E0008F824 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		96E023481EF7C39E0008F824 /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = Carthage/Build/iOS/Unbox.framework; sourceTree = "<group>"; };
+		96E0234B1EF7C6F40008F824 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		96E0234D1EF7CD4F0008F824 /* Response+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Default.swift"; sourceTree = "<group>"; };
+		96E0234F1EF7CD9E0008F824 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,9 @@
 				96A8B4831EF7BBA9004C9CA1 /* Assets.xcassets */,
 				96A8B4851EF7BBA9004C9CA1 /* LaunchScreen.storyboard */,
 				96A8B4881EF7BBA9004C9CA1 /* Info.plist */,
+				96E0234B1EF7C6F40008F824 /* Request.swift */,
+				96E0234F1EF7CD9E0008F824 /* Response.swift */,
+				96E0234D1EF7CD4F0008F824 /* Response+Default.swift */,
 			);
 			path = TestAPIKit;
 			sourceTree = "<group>";
@@ -185,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E0234E1EF7CD4F0008F824 /* Response+Default.swift in Sources */,
 				96A8B47F1EF7BBA9004C9CA1 /* ViewController.swift in Sources */,
 				96A8B47D1EF7BBA9004C9CA1 /* AppDelegate.swift in Sources */,
+				96E0234C1EF7C6F40008F824 /* Request.swift in Sources */,
+				96E023501EF7CD9E0008F824 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
