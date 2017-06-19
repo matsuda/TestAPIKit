@@ -20,6 +20,7 @@
 		96E0234C1EF7C6F40008F824 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234B1EF7C6F40008F824 /* Request.swift */; };
 		96E0234E1EF7CD4F0008F824 /* Response+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234D1EF7CD4F0008F824 /* Response+Default.swift */; };
 		96E023501EF7CD9E0008F824 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234F1EF7CD9E0008F824 /* Response.swift */; };
+		96E023521EF7D4130008F824 /* Response+Himotoki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E023511EF7D4120008F824 /* Response+Himotoki.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		96E0234B1EF7C6F40008F824 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		96E0234D1EF7CD4F0008F824 /* Response+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Default.swift"; sourceTree = "<group>"; };
 		96E0234F1EF7CD9E0008F824 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		96E023511EF7D4120008F824 /* Response+Himotoki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Himotoki.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				96E0234B1EF7C6F40008F824 /* Request.swift */,
 				96E0234F1EF7CD9E0008F824 /* Response.swift */,
 				96E0234D1EF7CD4F0008F824 /* Response+Default.swift */,
+				96E023511EF7D4120008F824 /* Response+Himotoki.swift */,
 			);
 			path = TestAPIKit;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				96A8B47F1EF7BBA9004C9CA1 /* ViewController.swift in Sources */,
 				96A8B47D1EF7BBA9004C9CA1 /* AppDelegate.swift in Sources */,
 				96E0234C1EF7C6F40008F824 /* Request.swift in Sources */,
+				96E023521EF7D4130008F824 /* Response+Himotoki.swift in Sources */,
 				96E023501EF7CD9E0008F824 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
