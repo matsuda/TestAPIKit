@@ -12,6 +12,11 @@
 		96A8B4821EF7BBA9004C9CA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A8B4801EF7BBA9004C9CA1 /* Main.storyboard */; };
 		96A8B4841EF7BBA9004C9CA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A8B4831EF7BBA9004C9CA1 /* Assets.xcassets */; };
 		96A8B4871EF7BBA9004C9CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A8B4851EF7BBA9004C9CA1 /* LaunchScreen.storyboard */; };
+		96A8B4921EF7BD6A004C9CA1 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A8B4911EF7BCC1004C9CA1 /* APIKit.framework */; };
+		96A8B4931EF7BD7B004C9CA1 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A8B4901EF7BCC1004C9CA1 /* Result.framework */; };
+		96E023461EF7C39D0008F824 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E023451EF7C36B0008F824 /* Himotoki.framework */; };
+		96E023491EF7C3CD0008F824 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E023471EF7C39E0008F824 /* ObjectMapper.framework */; };
+		96E0234A1EF7C3DB0008F824 /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E023481EF7C39E0008F824 /* Unbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		96A8B4831EF7BBA9004C9CA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96A8B4861EF7BBA9004C9CA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96A8B4881EF7BBA9004C9CA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A8B4901EF7BCC1004C9CA1 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		96A8B4911EF7BCC1004C9CA1 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		96E023451EF7C36B0008F824 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		96E023471EF7C39E0008F824 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		96E023481EF7C39E0008F824 /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = Carthage/Build/iOS/Unbox.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E0234A1EF7C3DB0008F824 /* Unbox.framework in Frameworks */,
+				96E023491EF7C3CD0008F824 /* ObjectMapper.framework in Frameworks */,
+				96E023461EF7C39D0008F824 /* Himotoki.framework in Frameworks */,
+				96A8B4931EF7BD7B004C9CA1 /* Result.framework in Frameworks */,
+				96A8B4921EF7BD6A004C9CA1 /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,7 @@
 			children = (
 				96A8B47B1EF7BBA9004C9CA1 /* TestAPIKit */,
 				96A8B47A1EF7BBA9004C9CA1 /* Products */,
+				96A8B48F1EF7BCC1004C9CA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,18 @@
 			path = TestAPIKit;
 			sourceTree = "<group>";
 		};
+		96A8B48F1EF7BCC1004C9CA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96E023471EF7C39E0008F824 /* ObjectMapper.framework */,
+				96E023481EF7C39E0008F824 /* Unbox.framework */,
+				96E023451EF7C36B0008F824 /* Himotoki.framework */,
+				96A8B4911EF7BCC1004C9CA1 /* APIKit.framework */,
+				96A8B4901EF7BCC1004C9CA1 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +102,7 @@
 				96A8B4751EF7BBA9004C9CA1 /* Sources */,
 				96A8B4761EF7BBA9004C9CA1 /* Frameworks */,
 				96A8B4771EF7BBA9004C9CA1 /* Resources */,
+				96A8B48E1EF7BC9F004C9CA1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +158,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96A8B48E1EF7BC9F004C9CA1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Unbox.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96A8B4751EF7BBA9004C9CA1 /* Sources */ = {
@@ -269,6 +319,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestAPIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
@@ -282,6 +336,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestAPIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
@@ -310,6 +368,7 @@
 				96A8B48D1EF7BBA9004C9CA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
