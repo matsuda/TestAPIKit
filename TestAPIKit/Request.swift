@@ -10,7 +10,7 @@ import Foundation
 import APIKit
 
 struct UserRequest: Request {
-    typealias Response = UserResponse
+    typealias Response = User
     
     var baseURL: URL {
         return URL(string: "https://api.github.com")!
@@ -21,7 +21,7 @@ struct UserRequest: Request {
     }
     
     var path: String {
-        return "/users"
+        return "/users/matsuda"
     }
 
 //    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> UserResponse {
