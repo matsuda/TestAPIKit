@@ -10,6 +10,9 @@
 		964611D01EF8BEA500BFBDA1 /* Response+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964611CF1EF8BEA500BFBDA1 /* Response+Unbox.swift */; };
 		965A0BAC1EF8C681009913D3 /* Response+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BAB1EF8C681009913D3 /* Response+Codable.swift */; };
 		965A0BAE1EF8CDBB009913D3 /* TransparentDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BAD1EF8CDBB009913D3 /* TransparentDataParser.swift */; };
+		965A0BB21EF8E6F0009913D3 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BB11EF8E6F0009913D3 /* MockURLProtocol.swift */; };
+		965A0BB41EF8E78D009913D3 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 965A0BB31EF8E78D009913D3 /* user.json */; };
+		965A0BB61EF8EBEA009913D3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BB51EF8EBEA009913D3 /* Session.swift */; };
 		96A8B47D1EF7BBA9004C9CA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B47C1EF7BBA9004C9CA1 /* AppDelegate.swift */; };
 		96A8B47F1EF7BBA9004C9CA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B47E1EF7BBA9004C9CA1 /* ViewController.swift */; };
 		96A8B4821EF7BBA9004C9CA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A8B4801EF7BBA9004C9CA1 /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 		964611CF1EF8BEA500BFBDA1 /* Response+Unbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Unbox.swift"; sourceTree = "<group>"; };
 		965A0BAB1EF8C681009913D3 /* Response+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Codable.swift"; sourceTree = "<group>"; };
 		965A0BAD1EF8CDBB009913D3 /* TransparentDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentDataParser.swift; sourceTree = "<group>"; };
+		965A0BB11EF8E6F0009913D3 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		965A0BB31EF8E78D009913D3 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		965A0BB51EF8EBEA009913D3 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		96A8B4791EF7BBA9004C9CA1 /* TestAPIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAPIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A8B47C1EF7BBA9004C9CA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96A8B47E1EF7BBA9004C9CA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 				964611CF1EF8BEA500BFBDA1 /* Response+Unbox.swift */,
 				965A0BAB1EF8C681009913D3 /* Response+Codable.swift */,
 				965A0BAD1EF8CDBB009913D3 /* TransparentDataParser.swift */,
+				965A0BB51EF8EBEA009913D3 /* Session.swift */,
+				965A0BB11EF8E6F0009913D3 /* MockURLProtocol.swift */,
+				965A0BB31EF8E78D009913D3 /* user.json */,
 			);
 			path = TestAPIKit;
 			sourceTree = "<group>";
@@ -172,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965A0BB41EF8E78D009913D3 /* user.json in Resources */,
 				96A8B4871EF7BBA9004C9CA1 /* LaunchScreen.storyboard in Resources */,
 				96A8B4841EF7BBA9004C9CA1 /* Assets.xcassets in Resources */,
 				96A8B4821EF7BBA9004C9CA1 /* Main.storyboard in Resources */,
@@ -208,11 +218,13 @@
 			files = (
 				96E0234E1EF7CD4F0008F824 /* Response+Default.swift in Sources */,
 				964611D01EF8BEA500BFBDA1 /* Response+Unbox.swift in Sources */,
+				965A0BB21EF8E6F0009913D3 /* MockURLProtocol.swift in Sources */,
 				96A8B47F1EF7BBA9004C9CA1 /* ViewController.swift in Sources */,
 				96A8B47D1EF7BBA9004C9CA1 /* AppDelegate.swift in Sources */,
 				96E0234C1EF7C6F40008F824 /* Request.swift in Sources */,
 				965A0BAC1EF8C681009913D3 /* Response+Codable.swift in Sources */,
 				96E023521EF7D4130008F824 /* Response+Himotoki.swift in Sources */,
+				965A0BB61EF8EBEA009913D3 /* Session.swift in Sources */,
 				96E023501EF7CD9E0008F824 /* Response.swift in Sources */,
 				965A0BAE1EF8CDBB009913D3 /* TransparentDataParser.swift in Sources */,
 			);
