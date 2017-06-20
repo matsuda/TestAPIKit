@@ -10,6 +10,7 @@
 		964611D01EF8BEA500BFBDA1 /* Response+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964611CF1EF8BEA500BFBDA1 /* Response+Unbox.swift */; };
 		965A0BAC1EF8C681009913D3 /* Response+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BAB1EF8C681009913D3 /* Response+Codable.swift */; };
 		965A0BAE1EF8CDBB009913D3 /* TransparentDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BAD1EF8CDBB009913D3 /* TransparentDataParser.swift */; };
+		965A0BB01EF8CEBD009913D3 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BAF1EF8CEBD009913D3 /* Response+ObjectMapper.swift */; };
 		965A0BB21EF8E6F0009913D3 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BB11EF8E6F0009913D3 /* MockURLProtocol.swift */; };
 		965A0BB41EF8E78D009913D3 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 965A0BB31EF8E78D009913D3 /* user.json */; };
 		965A0BB61EF8EBEA009913D3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BB51EF8EBEA009913D3 /* Session.swift */; };
@@ -33,6 +34,7 @@
 		964611CF1EF8BEA500BFBDA1 /* Response+Unbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Unbox.swift"; sourceTree = "<group>"; };
 		965A0BAB1EF8C681009913D3 /* Response+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Codable.swift"; sourceTree = "<group>"; };
 		965A0BAD1EF8CDBB009913D3 /* TransparentDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentDataParser.swift; sourceTree = "<group>"; };
+		965A0BAF1EF8CEBD009913D3 /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
 		965A0BB11EF8E6F0009913D3 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		965A0BB31EF8E78D009913D3 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		965A0BB51EF8EBEA009913D3 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				96E023511EF7D4120008F824 /* Response+Himotoki.swift */,
 				964611CF1EF8BEA500BFBDA1 /* Response+Unbox.swift */,
 				965A0BAB1EF8C681009913D3 /* Response+Codable.swift */,
+				965A0BAF1EF8CEBD009913D3 /* Response+ObjectMapper.swift */,
 				965A0BAD1EF8CDBB009913D3 /* TransparentDataParser.swift */,
 				965A0BB51EF8EBEA009913D3 /* Session.swift */,
 				965A0BB11EF8E6F0009913D3 /* MockURLProtocol.swift */,
@@ -226,6 +229,7 @@
 				96E023521EF7D4130008F824 /* Response+Himotoki.swift in Sources */,
 				965A0BB61EF8EBEA009913D3 /* Session.swift in Sources */,
 				96E023501EF7CD9E0008F824 /* Response.swift in Sources */,
+				965A0BB01EF8CEBD009913D3 /* Response+ObjectMapper.swift in Sources */,
 				965A0BAE1EF8CDBB009913D3 /* TransparentDataParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

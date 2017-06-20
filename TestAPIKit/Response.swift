@@ -8,15 +8,15 @@
 
 import Foundation
 
-//struct UserResponse {
-//    let users: [User]
-//}
+struct UserResponse {
+    let users: [User]
+}
 
-//struct User {
-//    let id: Int
-//    let login: String
-//    let url: String
-//}
+struct User {
+    let id: Int
+    let login: String
+    let url: String
+}
 
 extension UserResponse: CustomStringConvertible {
     var description: String {
