@@ -15,19 +15,20 @@ import Unbox
 //    }
 //}
 
-extension User: Unboxable {
-    init(unboxer: Unboxer) throws {
-        self.id = try unboxer.unbox(key: "id")
-        self.login = try unboxer.unbox(key: "login")
-        self.url = try unboxer.unbox(key: "url")
-    }
-}
+//extension User: Unboxable {
+//    init(unboxer: Unboxer) throws {
+//        self.id = try unboxer.unbox(key: "id")
+//        self.login = try unboxer.unbox(key: "login")
+//        self.url = try unboxer.unbox(key: "url")
+//    }
+//}
+//
+//extension Request where Response: Unboxable {
+//    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
+//        guard let dictionary = object as? UnboxableDictionary else {
+//            throw ResponseError.unexpectedObject(object)
+//        }
+//        return try unbox(dictionary: dictionary)
+//    }
+//}
 
-extension Request where Response: Unboxable {
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
-        guard let dictionary = object as? UnboxableDictionary else {
-            throw ResponseError.unexpectedObject(object)
-        }
-        return try unbox(dictionary: dictionary)
-    }
-}
