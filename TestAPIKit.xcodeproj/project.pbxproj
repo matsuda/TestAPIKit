@@ -154,7 +154,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = Galapagos;
+				ORGANIZATIONNAME = matsuda;
 				TargetAttributes = {
 					96A8B4781EF7BBA9004C9CA1 = {
 						CreatedOnToolsVersion = 9.0;

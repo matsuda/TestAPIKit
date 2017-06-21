@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  TestAPIKit
 //
-//  Created by kosuke.matsuda on 2017/06/19.
-//  Copyright © 2017年 Galapagos. All rights reserved.
+//  Created by matsuda on 2017/06/19.
+//  Copyright © 2017年 matsuda. All rights reserved.
 //
 
 import UIKit
