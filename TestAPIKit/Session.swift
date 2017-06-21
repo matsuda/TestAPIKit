@@ -9,13 +9,9 @@
 import Foundation
 import APIKit
 
-enum API {
-    static var Session: APIKit.Session = {
-        let config = URLSessionConfiguration.default
-        config.protocolClasses = [MockURLProtocol.self]
-        let adapter = URLSessionAdapter(configuration: config)
-        return APIKit.Session(adapter: adapter)
-    }()
-}
-
-let Session = API.Session
+let Session: APIKit.Session = {
+    let config = URLSessionConfiguration.default
+    config.protocolClasses = [MockURLProtocol.self]
+    let adapter = URLSessionAdapter(configuration: config)
+    return APIKit.Session(adapter: adapter)
+}()

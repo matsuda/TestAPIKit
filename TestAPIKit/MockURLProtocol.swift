@@ -24,6 +24,8 @@ class MockURLProtocol: URLProtocol {
 
     /// Required
     open override func startLoading() {
+        print(#function)
+        print("url >>>", request.url ?? "")
         guard let path = Bundle.main.path(forResource: "user", ofType: "json"), let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: { [weak self] in
                 guard let `self` = self else { return }

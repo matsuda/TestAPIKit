@@ -10,18 +10,6 @@ import Foundation
 import APIKit
 import ObjectMapper
 
-extension UserResponse: Mappable {
-    init?(map: Map) {
-        guard let array = map.currentValue as? [[String: Any]] else {
-            return nil
-        }
-        self.init(users: Mapper<User>().mapArray(JSONArray: array))
-    }
-    
-    mutating func mapping(map: Map) {
-    }
-}
-
 extension User: Mappable {
 //    init(id: Int, login: String, url: String) {
 //        self.id = id

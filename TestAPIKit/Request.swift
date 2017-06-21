@@ -21,10 +21,6 @@ struct UserRequest: Request {
     }
     
     var path: String {
-        return "/users/matsuda"
+        return "/users/octocat"
     }
-
-//    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> UserResponse {
-//        return try UserResponse(object: object)
-//    }
 }
