@@ -9,15 +9,9 @@
 import Foundation
 import APIKit
 
-struct User: Codable {
-    let id: Int
-    let login: String
-    let url: String
-}
-
 extension Request where Response: Decodable {
     var dataParser: DataParser {
-        return TransparentDataParser()
+        return JSONDataParser()
     }
     
     func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
