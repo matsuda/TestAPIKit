@@ -10,33 +10,29 @@ import Foundation
 import APIKit
 import ObjectMapper
 
-extension User: Mappable {
-//    init(id: Int, login: String, url: String) {
-//        self.id = id
-//        self.login = login
-//        self.url = url
-//    }
-    
-    init?(map: Map) {
-        self.init(
-            id: map["id"].value()!,
-            login: map["login"].value()!,
-            url: map["url"].value()!
-        )
+extension User: ImmutableMappable {
+    init(map: Map) throws {
+        id = try map.value("id")
+        login = try map.value("login")
+        url = try map.value("url")
     }
-    
+
     mutating func mapping(map: Map) {
-//        id <- map["id"]
-//        login <- map["login"]
-//        url <- map["url"]
+        id >>> map["id"]
+        login >>> map["login"]
+        url >>> map["url"]
     }
 }
 
-extension Request where Response: Mappable {
+extension Request where Response: ImmutableMappable {
+    var dataParser: DataParser {
+        return StringDataParser()
+    }
+
     func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
-        guard let json = object as? [String: Any], let response = Mapper<Response>().map(JSON: json) else {
+        guard let json = object as? String else {
             throw ResponseError.unexpectedObject(object)
         }
-        return response
+        return try Response(JSONString: json)
     }
 }
