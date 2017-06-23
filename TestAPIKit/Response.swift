@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct UserResponse {
+    let users: [User]
+}
+
 struct User {
     let id: Int
     let login: String

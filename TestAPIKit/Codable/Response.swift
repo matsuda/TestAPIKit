@@ -8,6 +8,22 @@
 
 import Foundation
 
+struct UserResponse {
+    let users: [User]
+}
+
+extension UserResponse: Decodable {
+    init(from decoder: Decoder) throws {
+        var users: [User] = []
+        var unkeyedContainer = try decoder.unkeyedContainer()
+        while !unkeyedContainer.isAtEnd {
+            let user = try unkeyedContainer.decode(User.self)
+            users.append(user)
+        }
+        self.init(users: users)
+    }
+}
+
 struct User: Codable {
     let id: Int
     let login: String

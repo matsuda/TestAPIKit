@@ -11,6 +11,12 @@
 		960E7F821EFA6A36004B648C /* JSONDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BAD1EF8CDBB009913D3 /* JSONDataParser.swift */; };
 		960E7F831EFA6A36004B648C /* JSONDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BAD1EF8CDBB009913D3 /* JSONDataParser.swift */; };
 		960E7F841EFA6A37004B648C /* JSONDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BAD1EF8CDBB009913D3 /* JSONDataParser.swift */; };
+		96194F221EFD0BD200DEE18A /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 96194F211EFD0BD200DEE18A /* users.json */; };
+		96194F231EFD0C0600DEE18A /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 96194F211EFD0BD200DEE18A /* users.json */; };
+		96194F241EFD0C0700DEE18A /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 96194F211EFD0BD200DEE18A /* users.json */; };
+		96194F251EFD0C0700DEE18A /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 96194F211EFD0BD200DEE18A /* users.json */; };
+		96194F261EFD0C0700DEE18A /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 96194F211EFD0BD200DEE18A /* users.json */; };
+		96194F281EFD0D5900DEE18A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E416C11EFBA5D400B8362B /* Response.swift */; };
 		965771F41EFA60B200ACDBD0 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E023471EF7C39E0008F824 /* ObjectMapper.framework */; };
 		966D54051EFA790300D01F6F /* Response+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D54041EFA790300D01F6F /* Response+Helper.swift */; };
 		966D54061EFA790300D01F6F /* Response+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D54041EFA790300D01F6F /* Response+Helper.swift */; };
@@ -82,12 +88,12 @@
 		96A65A251EFA581700B3F901 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A8B4851EF7BBA9004C9CA1 /* LaunchScreen.storyboard */; };
 		96A65A261EFA581700B3F901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A8B4831EF7BBA9004C9CA1 /* Assets.xcassets */; };
 		96A65A271EFA581700B3F901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A8B4801EF7BBA9004C9CA1 /* Main.storyboard */; };
-		96E416C31EFBA60500B8362B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E416C11EFBA5D400B8362B /* Response.swift */; };
 		96E416C61EFBA74E00B8362B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234F1EF7CD9E0008F824 /* Response.swift */; };
 		96E416CA1EFBA8BD00B8362B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234F1EF7CD9E0008F824 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96194F211EFD0BD200DEE18A /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		964611CF1EF8BEA500BFBDA1 /* Response+Unbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Unbox.swift"; sourceTree = "<group>"; };
 		965A0BAB1EF8C681009913D3 /* Response+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Codable.swift"; sourceTree = "<group>"; };
 		965A0BAD1EF8CDBB009913D3 /* JSONDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataParser.swift; sourceTree = "<group>"; };
@@ -171,6 +177,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96194F291EFD1D4F00DEE18A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				965A0BB31EF8E78D009913D3 /* user.json */,
+				96194F211EFD0BD200DEE18A /* users.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		96A8B4701EF7BBA9004C9CA1 = {
 			isa = PBXGroup;
 			children = (
@@ -212,7 +227,7 @@
 				965A0BAD1EF8CDBB009913D3 /* JSONDataParser.swift */,
 				965A0BB51EF8EBEA009913D3 /* Session.swift */,
 				965A0BB11EF8E6F0009913D3 /* MockURLProtocol.swift */,
-				965A0BB31EF8E78D009913D3 /* user.json */,
+				96194F291EFD1D4F00DEE18A /* Resources */,
 			);
 			path = TestAPIKit;
 			sourceTree = "<group>";
@@ -400,6 +415,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96194F221EFD0BD200DEE18A /* users.json in Resources */,
 				96A659A81EFA57C700B3F901 /* user.json in Resources */,
 				96A659A91EFA57C700B3F901 /* LaunchScreen.storyboard in Resources */,
 				96A659AA1EFA57C700B3F901 /* Assets.xcassets in Resources */,
@@ -411,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96194F231EFD0C0600DEE18A /* users.json in Resources */,
 				96A659C71EFA57F100B3F901 /* user.json in Resources */,
 				96A659C81EFA57F100B3F901 /* LaunchScreen.storyboard in Resources */,
 				96A659C91EFA57F100B3F901 /* Assets.xcassets in Resources */,
@@ -422,6 +439,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96194F241EFD0C0700DEE18A /* users.json in Resources */,
 				96A659E61EFA57FC00B3F901 /* user.json in Resources */,
 				96A659E71EFA57FC00B3F901 /* LaunchScreen.storyboard in Resources */,
 				96A659E81EFA57FC00B3F901 /* Assets.xcassets in Resources */,
@@ -433,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96194F251EFD0C0700DEE18A /* users.json in Resources */,
 				96A65A051EFA580700B3F901 /* user.json in Resources */,
 				96A65A061EFA580700B3F901 /* LaunchScreen.storyboard in Resources */,
 				96A65A071EFA580700B3F901 /* Assets.xcassets in Resources */,
@@ -444,6 +463,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96194F261EFD0C0700DEE18A /* users.json in Resources */,
 				96A65A241EFA581700B3F901 /* user.json in Resources */,
 				96A65A251EFA581700B3F901 /* LaunchScreen.storyboard in Resources */,
 				96A65A261EFA581700B3F901 /* Assets.xcassets in Resources */,
@@ -619,7 +639,7 @@
 				96A65A141EFA581700B3F901 /* ViewController.swift in Sources */,
 				96A65A151EFA581700B3F901 /* AppDelegate.swift in Sources */,
 				96A65A161EFA581700B3F901 /* Request.swift in Sources */,
-				96E416C31EFBA60500B8362B /* Response.swift in Sources */,
+				96194F281EFD0D5900DEE18A /* Response.swift in Sources */,
 				966D54091EFA790300D01F6F /* Response+Helper.swift in Sources */,
 				96A65A171EFA581700B3F901 /* Response+Codable.swift in Sources */,
 				96A65A191EFA581700B3F901 /* Session.swift in Sources */,

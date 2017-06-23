@@ -1,0 +1,17 @@
+[
+ {
+ "login": "mojombo",
+ "id": 1,
+ "url": "https://api.github.com/users/mojombo",
+ },
+ {
+ "login": "defunkt",
+ "id": 2,
+ "url": "https://api.github.com/users/defunkt",
+ },
+ {
+ "login": "pjhyett",
+ "id": 3,
+ "url": "https://api.github.com/users/pjhyett",
+ }
+]

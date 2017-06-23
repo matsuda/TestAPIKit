@@ -10,6 +10,14 @@ import Foundation
 import APIKit
 import Himotoki
 
+extension UserResponse: Himotoki.Decodable {
+    static func decode(_ e: Extractor) throws -> UserResponse {
+        return try UserResponse(
+            users: decodeArray(e.rawValue)
+        )
+    }
+}
+
 extension User: Himotoki.Decodable {
     static func decode(_ e: Extractor) throws -> User {
         return try User(
