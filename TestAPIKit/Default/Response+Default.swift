@@ -9,13 +9,17 @@
 import Foundation
 import APIKit
 
-extension User {
-    init(object: Any) throws {
-        guard let dict = object as? [String: Any],
+protocol JSONDecodable {
+    init(JSON: Any) throws
+}
+
+extension User: JSONDecodable {
+    init(JSON: Any) throws {
+        guard let dict = JSON as? [String: Any],
             let id = dict["id"] as? Int,
             let login = dict["login"] as? String,
             let url = dict["url"] as? String else {
-                throw ResponseError.unexpectedObject(object)
+                throw ResponseError.unexpectedObject(JSON)
         }
         self.id = id
         self.login = login
@@ -23,8 +27,17 @@ extension User {
     }
 }
 
-extension UserRequest {
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> User {
-        return try User(object: object)
+extension UserResponse: JSONDecodable {
+    init(JSON: Any) throws {
+        guard let array = JSON as? [[String: Any]] else {
+            throw ResponseError.unexpectedObject(JSON)
+        }
+        self.users = try array.map { try User(JSON: $0) }
+    }
+}
+
+extension Request where Response: JSONDecodable {
+    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
+        return try Response(JSON: object)
     }
 }
