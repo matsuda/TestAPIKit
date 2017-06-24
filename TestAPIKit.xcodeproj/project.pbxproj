@@ -679,6 +679,7 @@
 				);
 				INFOPLIST_FILE = TestAPIKit/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDefault";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -696,6 +697,7 @@
 				);
 				INFOPLIST_FILE = TestAPIKit/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDefault";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -713,6 +715,7 @@
 				);
 				INFOPLIST_FILE = TestAPIKit/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DHimotoki";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -730,6 +733,7 @@
 				);
 				INFOPLIST_FILE = TestAPIKit/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DHimotoki";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -747,6 +751,7 @@
 				);
 				INFOPLIST_FILE = TestAPIKit/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DUnbox";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -764,6 +769,7 @@
 				);
 				INFOPLIST_FILE = TestAPIKit/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DUnbox";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -781,6 +787,7 @@
 				);
 				INFOPLIST_FILE = TestAPIKit/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DObjectMapper";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -798,6 +805,7 @@
 				);
 				INFOPLIST_FILE = TestAPIKit/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DObjectMapper";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -815,6 +823,7 @@
 				);
 				INFOPLIST_FILE = TestAPIKit/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DCodable";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -832,6 +841,7 @@
 				);
 				INFOPLIST_FILE = TestAPIKit/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DCodable";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glpgs.TestAPIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

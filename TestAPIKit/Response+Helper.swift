@@ -12,9 +12,21 @@ extension User: CustomStringConvertible {
     var description: String {
         return """
         \( type(of: self) ) {
-        id   : \(id)
-        login: \(login)
-        url  : \(url)
+        id : \(id)
+        login : \(login)
+        url : \(url)
+        }
+        """
+    }
+}
+
+extension UserResponse: CustomStringConvertible {
+    var description: String {
+        return """
+        \( type(of: self) ) {
+        users : {\n
+        \( users.map{"\($0)"}.joined(separator: "\n\n") )
+        \n}
         }
         """
     }

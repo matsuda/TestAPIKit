@@ -8,6 +8,12 @@
 
 import Foundation
 
+struct User: Codable {
+    let id: Int
+    let login: String
+    let url: String
+}
+
 struct UserResponse {
     let users: [User]
 }
@@ -24,8 +30,11 @@ extension UserResponse: Decodable {
     }
 }
 
-struct User: Codable {
-    let id: Int
-    let login: String
-    let url: String
+extension UserResponse: Encodable {
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.unkeyedContainer()
+        for user in users {
+            try container.encode(user)
+        }
+    }
 }
