@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EF167131EFFA08C0057094F /* UsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF167121EFFA08C0057094F /* UsersRequest.swift */; };
+		0EF167171EFFA70C0057094F /* UsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF167161EFFA70C0057094F /* UsersRequest.swift */; };
+		0EF167181EFFAB080057094F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234B1EF7C6F40008F824 /* Request.swift */; };
+		0EF167191EFFAB080057094F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234B1EF7C6F40008F824 /* Request.swift */; };
 		960E7F811EFA6A32004B648C /* JSONDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BAD1EF8CDBB009913D3 /* JSONDataParser.swift */; };
 		960E7F821EFA6A36004B648C /* JSONDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BAD1EF8CDBB009913D3 /* JSONDataParser.swift */; };
 		960E7F831EFA6A36004B648C /* JSONDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BAD1EF8CDBB009913D3 /* JSONDataParser.swift */; };
@@ -27,7 +31,6 @@
 		96A659971EFA57C700B3F901 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BB11EF8E6F0009913D3 /* MockURLProtocol.swift */; };
 		96A659981EFA57C700B3F901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B47E1EF7BBA9004C9CA1 /* ViewController.swift */; };
 		96A659991EFA57C700B3F901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B47C1EF7BBA9004C9CA1 /* AppDelegate.swift */; };
-		96A6599A1EFA57C700B3F901 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234B1EF7C6F40008F824 /* Request.swift */; };
 		96A6599D1EFA57C700B3F901 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BB51EF8EBEA009913D3 /* Session.swift */; };
 		96A659A51EFA57C700B3F901 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A8B4901EF7BCC1004C9CA1 /* Result.framework */; };
 		96A659A61EFA57C700B3F901 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A8B4911EF7BCC1004C9CA1 /* APIKit.framework */; };
@@ -38,7 +41,6 @@
 		96A659B61EFA57F100B3F901 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BB11EF8E6F0009913D3 /* MockURLProtocol.swift */; };
 		96A659B71EFA57F100B3F901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B47E1EF7BBA9004C9CA1 /* ViewController.swift */; };
 		96A659B81EFA57F100B3F901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B47C1EF7BBA9004C9CA1 /* AppDelegate.swift */; };
-		96A659B91EFA57F100B3F901 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234B1EF7C6F40008F824 /* Request.swift */; };
 		96A659BB1EFA57F100B3F901 /* Response+Himotoki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E023511EF7D4120008F824 /* Response+Himotoki.swift */; };
 		96A659BC1EFA57F100B3F901 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A0BB51EF8EBEA009913D3 /* Session.swift */; };
 		96A659BD1EFA57F100B3F901 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0234F1EF7CD9E0008F824 /* Response.swift */; };
@@ -93,6 +95,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EF167121EFFA08C0057094F /* UsersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRequest.swift; sourceTree = "<group>"; };
+		0EF167161EFFA70C0057094F /* UsersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRequest.swift; sourceTree = "<group>"; };
 		96194F211EFD0BD200DEE18A /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		964611CF1EF8BEA500BFBDA1 /* Response+Unbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Unbox.swift"; sourceTree = "<group>"; };
 		965A0BAB1EF8C681009913D3 /* Response+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Codable.swift"; sourceTree = "<group>"; };
@@ -247,6 +251,7 @@
 		96E416BC1EFBA55F00B8362B /* Default */ = {
 			isa = PBXGroup;
 			children = (
+				0EF167121EFFA08C0057094F /* UsersRequest.swift */,
 				96E0234D1EF7CD4F0008F824 /* Response+Default.swift */,
 			);
 			path = Default;
@@ -255,6 +260,7 @@
 		96E416BD1EFBA57100B8362B /* Himotoki */ = {
 			isa = PBXGroup;
 			children = (
+				0EF167161EFFA70C0057094F /* UsersRequest.swift */,
 				96E023511EF7D4120008F824 /* Response+Himotoki.swift */,
 			);
 			path = Himotoki;
@@ -576,9 +582,10 @@
 				96A659981EFA57C700B3F901 /* ViewController.swift in Sources */,
 				96A659991EFA57C700B3F901 /* AppDelegate.swift in Sources */,
 				96E416C61EFBA74E00B8362B /* Response.swift in Sources */,
-				96A6599A1EFA57C700B3F901 /* Request.swift in Sources */,
 				966D54051EFA790300D01F6F /* Response+Helper.swift in Sources */,
 				96A6599D1EFA57C700B3F901 /* Session.swift in Sources */,
+				0EF167181EFFAB080057094F /* Request.swift in Sources */,
+				0EF167131EFFA08C0057094F /* UsersRequest.swift in Sources */,
 				960E7F821EFA6A36004B648C /* JSONDataParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,11 +597,12 @@
 				96A659B61EFA57F100B3F901 /* MockURLProtocol.swift in Sources */,
 				96A659B71EFA57F100B3F901 /* ViewController.swift in Sources */,
 				96A659B81EFA57F100B3F901 /* AppDelegate.swift in Sources */,
-				96A659B91EFA57F100B3F901 /* Request.swift in Sources */,
 				96A659BB1EFA57F100B3F901 /* Response+Himotoki.swift in Sources */,
 				966D54061EFA790300D01F6F /* Response+Helper.swift in Sources */,
 				96A659BC1EFA57F100B3F901 /* Session.swift in Sources */,
 				96A659BD1EFA57F100B3F901 /* Response.swift in Sources */,
+				0EF167191EFFAB080057094F /* Request.swift in Sources */,
+				0EF167171EFFA70C0057094F /* UsersRequest.swift in Sources */,
 				960E7F831EFA6A36004B648C /* JSONDataParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

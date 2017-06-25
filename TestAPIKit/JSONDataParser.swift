@@ -9,7 +9,7 @@
 import Foundation
 import APIKit
 
-class JSONDataParser: DataParser {
+class JSONDataParser: APIKit.DataParser {
     var contentType: String? {
         return "application/json"
     }

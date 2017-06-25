@@ -29,7 +29,8 @@ class ViewController: UIViewController {
     }
 
     func sendRequest() {
-        let request = UserRequest()
+//        let request = UsersRequest(count: 3)
+        let request = UserRequest(name: "octocat")
         Session.send(request) { [unowned self] (result) in
             switch result {
             case .success(let response):

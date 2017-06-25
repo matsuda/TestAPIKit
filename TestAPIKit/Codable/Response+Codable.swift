@@ -9,11 +9,11 @@
 import Foundation
 import APIKit
 
-extension Request where Response: Decodable {
+extension APIKit.Request where Response: Decodable {
     var dataParser: DataParser {
         return JSONDataParser()
     }
-    
+
     func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
         guard let data = object as? Data else {
             throw ResponseError.unexpectedObject(object)

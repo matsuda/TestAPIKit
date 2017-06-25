@@ -36,8 +36,26 @@ extension UserResponse: JSONDecodable {
     }
 }
 
-extension Request where Response: JSONDecodable {
+extension APIKit.Request where Response: JSONDecodable {
     func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
         return try Response(JSON: object)
     }
 }
+
+extension Array where Element: JSONDecodable {
+    init(JSON: Any) throws {
+        guard let array = JSON as? [[String: Any]] else {
+            throw ResponseError.unexpectedObject(JSON)
+        }
+        self = try array.map { try Element(JSON: $0) }
+    }
+}
+
+//extension UserRequest {
+//    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> [User] {
+//        guard let array = object as? [[String: Any]] else {
+//            throw ResponseError.unexpectedObject(object)
+//        }
+//        return try array.map { try User(JSON: $0) }
+//    }
+//}

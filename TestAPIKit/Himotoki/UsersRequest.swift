@@ -1,18 +1,19 @@
 //
-//  Request.swift
-//  TestAPIKit
+//  UsersRequest.swift
+//  TestAPIKit_Himotoki
 //
-//  Created by matsuda on 2017/06/19.
+//  Created by Kosuke Matsuda on 2017/06/25.
 //  Copyright © 2017年 matsuda. All rights reserved.
 //
 
 import Foundation
 import APIKit
+import Himotoki
 
-struct UserRequest: APIKit.Request {
-    typealias Response = User
+struct UsersRequest: APIKit.Request {
+    typealias Response = [User]
 
-    let name: String
+    let count: Int
 
     // MARK: - APIKit.Request
 
@@ -29,6 +30,10 @@ struct UserRequest: APIKit.Request {
     }
 
     var parameters: Any? {
-        return ["name": name]
+        return ["count": count]
+    }
+
+    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> [User] {
+        return try decodeArray(object)
     }
 }
